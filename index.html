@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header  id="encabezado">
+        <img src="imagenes/Logo.png" class="logo" alt="logo de alura">
+        <h1>Encriptador de texto alura</h1>
+    </header>
+
+    <main id="producciondecifrado">
+        <section class="seccionCifrado">
+            <textarea id="textoIngresado" placeholder="Ingrese el texto" cols="30" rows="10" class="cajaTextoIngresado"></textarea>
+            <div>
+                <h6 class="informacion"> <img src="imagenes/bi_exclamation-circle-fill.jpg"> Solo letrás minusculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btnencriptar"  onclick="btnencriptar()">
+                    Encriptar
+                </button>
+                <button  class="btndesencriptar" onclick="btndesencriptar()">
+                    Desencriptar
+                </button>
+            
+            </div>
+        </section>
+
+        <section class="seccionTextos">
+        <textarea id="campoDelMensaje" cols="20" rows="10" class="mensaje"></textarea>
+            <div id="botonCopiar">
+                <button  class="copiarTexto" onclick="copiarTexto()">
+                    Copiar
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2>Juan Felipe Alzate Usuga- 2024</h2>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
